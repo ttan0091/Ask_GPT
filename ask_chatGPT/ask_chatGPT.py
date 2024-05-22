@@ -1,24 +1,30 @@
-
 import requests
 import os
-def ask_chatgpt(question):
-    # get api key
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    api_key_path = os.path.join(script_dir, 'api_key.txt')
-    
+import json
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+api_key_path = os.path.join(script_dir, 'api_key.txt')
+input_data_path = os.path.join(script_dir, 'input_data.json')
+
+def get_api_key():
+
     try:
         with open(api_key_path, 'r') as file:
             api_key = file.read().strip()
     except FileNotFoundError:
         print(f"File not found: {api_key_path}")
         return None
+    return api_key
+
+def ask_chatgpt(api_key, question):
     url = "https://api.openai.com/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
     }
     data = {
-        "model": "gpt-3.5-turbo-0125",
+        # "model": "gpt-3.5-turbo-0125",
+        "model": "gpt-4o",
         "messages": [
             {"role": "user", "content": question}
         ],
@@ -28,54 +34,72 @@ def ask_chatgpt(question):
     response = requests.post(url, json=data, headers=headers)
     return response.json()
 
-# sent a question to the GPT-3 model
-question = """
-Does the following smart contract code add or check approval via require/if statements before the token transfer,
-and there is no clear/reset of the approval when the transfer finishes its main branch or encounters exceptions? Answer only "Yes" or "No".
-You can mimic answering them in the background five times and provide me with the most frequently appearing answer.
-pragma solidity ^0.8.0;
+def main():
+    api_key = get_api_key()
+    if not api_key:
+        return
+    
+    # 读取input_data.json
+    with open(input_data_path, 'r', encoding='utf-8') as file:
+        input_data = json.load(file)
+    
+    # 固定的智能合约代码
+    question_code = """
+    // SPDX-License-Identifier: MIT
+    pragma solidity ^0.8.0;
 
-interface IERC20 {
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-    function approve(address spender, uint256 amount) external returns (bool);
-    function allowance(address owner, address spender) external view returns (uint256);
-}
-
-contract VulnerableToken is IERC20 {
-    mapping(address => uint256) public balances;
-    mapping(address => mapping(address => uint256)) public allowed;
-
-    uint256 public totalSupply = 1000000; // 假设初始供应量为100万
-
-    constructor() {
-        balances[msg.sender] = totalSupply; // 将初始代币余额赋给合约创建者
+    interface IERC20 {
+        function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+        function approve(address spender, uint256 amount) external returns (bool);
+        function allowance(address owner, address spender) external view returns (uint256);
     }
 
-    function transferFrom(address sender, address recipient, uint256 amount) external override returns (bool) {
-        require(amount <= balances[sender], "Insufficient balance");
-        require(amount <= allowed[sender][msg.sender], "Insufficient allowance");
+    contract TokenTransfer {
+        IERC20 public token;
+        address public owner;
+        mapping(address => bool) public approvedAddresses;
 
-        balances[sender] -= amount;
-        balances[recipient] += amount;
+        constructor(address _token) {
+            token = IERC20(_token);
+            owner = msg.sender;
+        }
 
-        return true;
+        modifier onlyOwner() {
+            require(msg.sender == owner, "Not the owner");
+            _;
+        }
+
+        function approveAddress(address _addr) external onlyOwner {
+            approvedAddresses[_addr] = true;
+        }
+
+        function transfer(address _to, uint256 _amount) external {
+            require(approvedAddresses[msg.sender], "Not approved to transfer");
+
+            // Transfer tokens
+            require(token.transferFrom(msg.sender, _to, _amount), "Transfer failed");
+
+        }
     }
+    """
 
-    function approve(address spender, uint256 amount) external override returns (bool) {
-        allowed[msg.sender][spender] = amount;
-        return true;
-    }
+    results = []
 
-    function allowance(address owner, address spender) external view override returns (uint256) {
-        return allowed[owner][spender];
-    }
-}
-"""
+    # 遍历每句话并发送请求
+    for sentence in input_data:
+        question_header = f"{sentence}"
+        print(f"question_header: {question_header}")
+        print()
+        question = question_header + question_code
+        response = ask_chatgpt(api_key, question)
+        
+        # 解析并保存回复
+        reply = response['choices'][0]['message']['content']
+        results.append({"reply": reply})
+    
+    # 写入results.json
+    with open('results_gpt_4o.json', 'w', encoding='utf-8') as output_file:
+        json.dump(results, output_file, ensure_ascii=False, indent=4)
 
-# get the answer from the GPT-3 model
-answer = ask_chatgpt(question)
-print(answer['choices'][0]['message']['content'])
-
-
-
-
+if __name__ == "__main__":
+    main()
