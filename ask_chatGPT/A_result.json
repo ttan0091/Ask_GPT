@@ -1,0 +1,152 @@
+[
+    {
+        "Id": 1,
+        "Prompt": "Is approval added or checked via require/if statements before the token transfer in the following smart contract code, and is there no clear/reset of the approval when the transfer finishes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Mimic answering them five times and give me the most frequent answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 2,
+        "Prompt": "In the following smart contract code, does the approval get added or checked via require/if statements before the token transfer, and is there no clear/reset of the approval when the transfer completes its main branch or hits exceptions? Respond only 'Yes' or 'No'. Simulate answering five times and provide the most common answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 3,
+        "Prompt": "For the following smart contract code, does it add or check approval using require/if statements before token transfer, and does it not clear/reset approval when the transfer completes its main branch or encounters exceptions? Reply only 'Yes' or 'No'. Imitate answering five times and tell me the most frequent response.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 4,
+        "Prompt": "Does the smart contract code below use require/if statements to add or check approval before transferring tokens, and is there no clear/reset of approval when the transfer completes its main path or hits exceptions? Answer 'Yes' or 'No'. Mimic answering five times and provide the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 5,
+        "Prompt": "Is approval handled with require/if statements before the token transfer in the following code, and is there no clear/reset of approval when the transfer completes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Perform this check five times and report the most common answer.",
+        "Yes": 4.0,
+        "No": 96.0
+    },
+    {
+        "Id": 6,
+        "Prompt": "In the given smart contract code, is approval added or checked via require/if statements before the token transfer, and does the approval remain uncleared/unreset when the transfer finishes its main branch or encounters exceptions? Respond with 'Yes' or 'No'. Mimic answering five times and give the most frequent response.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 7,
+        "Prompt": "Does the code below in the smart contract add or check approval via require/if statements before a token transfer, and does it not clear/reset approval when the transfer concludes its main branch or faces exceptions? Answer only 'Yes' or 'No'. Simulate answering five times and provide the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 8,
+        "Prompt": "For the following smart contract code, is approval added or checked through require/if statements before the token transfer, and is there no clear/reset of the approval when the transfer finishes its main branch or meets exceptions? Reply 'Yes' or 'No'. Mimic this process five times and give the most frequent answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 9,
+        "Prompt": "Is approval added or checked before the token transfer using require/if statements in the following smart contract code, and is the approval not cleared/reset when the transfer completes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Mimic answering five times and give the most common response.",
+        "Yes": 3.0,
+        "No": 97.0
+    },
+    {
+        "Id": 10,
+        "Prompt": "Does the following smart contract code involve adding or checking approval via require/if statements before a token transfer, without clearing/resetting approval when the transfer finishes its main branch or hits exceptions? Answer 'Yes' or 'No'. Simulate answering five times and provide the most frequent answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 11,
+        "Prompt": "Is there an addition or check of approval via require/if statements before the token transfer in the following smart contract code, and does it lack a clear/reset of approval when the transfer concludes its main branch or faces exceptions? Answer 'Yes' or 'No'. Perform this check five times and provide the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 12,
+        "Prompt": "Does the smart contract code below use require/if statements for adding or checking approval before a token transfer, and is there no clear/reset of the approval when the transfer completes its main branch or encounters exceptions? Answer only 'Yes' or 'No'. Mimic answering five times and report the most frequent answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 13,
+        "Prompt": "In the following smart contract code, is approval added or checked via require/if statements before a token transfer, and is there no clear/reset of the approval when the transfer finishes its main branch or encounters exceptions? Respond with 'Yes' or 'No'. Simulate answering five times and provide the most frequent response.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 14,
+        "Prompt": "Does the code below involve using require/if statements to add or check approval before a token transfer, and does it not clear/reset approval when the transfer completes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Mimic answering five times and give the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 15,
+        "Prompt": "For the given smart contract code, is approval added or checked through require/if statements before the token transfer, and is there no clear/reset of the approval when the transfer finishes its main branch or meets exceptions? Reply 'Yes' or 'No'. Mimic this process five times and give the most frequent answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 16,
+        "Prompt": "In the following smart contract code, is approval handled with require/if statements before the token transfer, and is the approval not cleared/reset when the transfer completes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Perform this check five times and provide the most frequent response.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 17,
+        "Prompt": "Does the smart contract code below add or check approval via require/if statements before a token transfer, and is there no clear/reset of approval when the transfer finishes its main branch or hits exceptions? Answer 'Yes' or 'No'. Simulate answering five times and provide the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 18,
+        "Prompt": "Is approval added or checked via require/if statements before the token transfer in the following smart contract code, and is there no clear/reset of the approval when the transfer completes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Mimic answering five times and report the most frequent response.",
+        "Yes": 3.0,
+        "No": 97.0
+    },
+    {
+        "Id": 19,
+        "Prompt": "For the smart contract code below, does it add or check approval using require/if statements before transferring tokens, and does it not clear/reset approval when the transfer completes its main path or faces exceptions? Answer 'Yes' or 'No'. Mimic answering five times and provide the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 20,
+        "Prompt": "Does the following smart contract code add or check approval via require/if statements before transferring tokens, and is there no clear/reset of approval when the transfer concludes its main branch or hits exceptions? Answer 'Yes' or 'No'. Simulate answering five times and provide the most frequent answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 21,
+        "Prompt": "In the smart contract code provided below, does it add or check approval using require/if statements before the token transfer, and is there no clear/reset of the approval when the transfer finishes its main branch or encounters exceptions? Respond 'Yes' or 'No'. Mimic answering five times and give the most frequent answer.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 22,
+        "Prompt": "Is approval added or checked via require/if statements before the token transfer in the following smart contract code, and is there no clear/reset of the approval when the transfer completes its main branch or meets exceptions? Answer 'Yes' or 'No'. Perform this check five times and provide the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 23,
+        "Prompt": "Does the smart contract code below add or check approval through require/if statements before a token transfer, and is the approval not cleared/reset when the transfer completes its main branch or hits exceptions? Answer 'Yes' or 'No'. Mimic answering five times and give the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    },
+    {
+        "Id": 24,
+        "Prompt": "Is the approval added or checked before the token transfer using require/if statements in the following smart contract code, and is there no clear/reset of the approval when the transfer finishes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Mimic answering five times and provide the most common response.",
+        "Yes": 100.0,
+        "No": 0.0
+    },
+    {
+        "Id": 25,
+        "Prompt": "Does the following smart contract code use require/if statements to add or check approval before a token transfer, and is there no clear/reset of the approval when the transfer finishes its main branch or encounters exceptions? Answer 'Yes' or 'No'. Simulate answering five times and provide the most frequent result.",
+        "Yes": 0.0,
+        "No": 100.0
+    }
+]
