@@ -1,0 +1,1 @@
+function _beforeUpgrade(address newImplementation) internal virtual override {}

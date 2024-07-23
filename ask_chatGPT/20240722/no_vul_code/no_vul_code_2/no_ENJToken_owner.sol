@@ -1,0 +1,1 @@
+function owner() public constant returns (address) { owner; }

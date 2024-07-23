@@ -1,0 +1,1 @@
+function decimals() public constant returns (uint8) { decimals; }

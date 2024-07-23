@@ -1,0 +1,1 @@
+function Controlled()  public { controller = msg.sender;}

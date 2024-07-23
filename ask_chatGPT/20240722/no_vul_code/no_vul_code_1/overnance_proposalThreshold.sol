@@ -1,0 +1,1 @@
+function proposalThreshold() public pure returns (uint) { return 1000000e18; }

@@ -1,0 +1,1 @@
+function name() public constant returns (string) { name; }

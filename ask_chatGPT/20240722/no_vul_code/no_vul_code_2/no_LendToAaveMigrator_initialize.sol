@@ -1,0 +1,2 @@
+function initialize() public initializer {
+    }

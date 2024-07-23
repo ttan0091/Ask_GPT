@@ -1,0 +1,1 @@
+function quorumVotes() public pure returns (uint) { return 4000000e18; }

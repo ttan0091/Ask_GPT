@@ -63,7 +63,7 @@ def main():
     with open(input_data_path, 'r', encoding='utf-8') as file:
         input_data = json.load(file)
     # 固定的智能合约代码
-    question_code = """
+    question_code1 = """
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.0;
 
@@ -101,7 +101,7 @@ def main():
         }
     }
     """
-    question_code1 = """
+    question_code = """
     pragma solidity ^0.4.17;
 contract owned {
     address public owner;
@@ -279,12 +279,12 @@ contract CCindexToken is owned, token {
     
     # 提取 input_data 里的 每一条数据
     for i in range(90):
-        if i <14:
-            continue
+        # if i !=24:
+        #     continue
         results = []
         sentence = input_data[i+1]['text']    
-        # 重复 100 次并发送请求
-        for _ in range(100):
+        # 重复 100 次发送请求
+        for _ in range(1):
             question_header = f"{sentence}"
             question = question_header + "Only answer the final Yes or No, don't answer anything else." + question_code
             time.sleep(0.5)
@@ -300,9 +300,10 @@ contract CCindexToken is owned, token {
         with open(target_path, 'w', encoding='utf-8') as output_file:
             json.dump(results, output_file, ensure_ascii=False, indent=4)
         
-        analysis_output = os.path.join(script_dir,'A_result.json')
+        analysis_output = os.path.join(script_dir,'No_result.json')
         analyzer = ReplyAnalyzer(target_path, analysis_output,id = i+1 ,prompt=sentence)
         analyzer.run_analysis()
+        
         print(i+1, 'done.')
 
 if __name__ == "__main__":
