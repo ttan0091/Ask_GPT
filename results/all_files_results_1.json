@@ -1,0 +1,1022 @@
+{
+  "vul_1_Approval Not Cleared_008.sol": [
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_009.sol": [
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_007.sol": [
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_006.sol": [
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_004.sol": [
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_010.sol": [
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_005.sol": [
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_001.sol": [
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ],
+  "vul_1_Approval Not Cleared_002.sol": [
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    }
+  ],
+  "vul_1_Approval Not Cleared_003.sol": [
+    {
+      "query_number": 2,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 10,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 7,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 17,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 8,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 3,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 14,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 1,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 15,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 16,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 5,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 6,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 4,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 20,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 9,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "no"
+    },
+    {
+      "query_number": 18,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 13,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 19,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 12,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    },
+    {
+      "query_number": 11,
+      "prompt_content": "As an experienced smart contract security auditor, please review the following contract for an Approval Not Cleared vulnerability. Answer only with 'yes' or 'no'.",
+      "response": "yes"
+    }
+  ]
+}

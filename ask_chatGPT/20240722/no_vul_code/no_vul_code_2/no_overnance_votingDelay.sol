@@ -1,1 +1,0 @@
-function votingDelay() public pure returns (uint) { return 1; }

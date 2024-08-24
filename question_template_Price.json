@@ -1,0 +1,497 @@
+{
+    "vulnerabilityType": "Price Manipulation by AMM",
+    "prompts": {
+        "zeroShot": [
+            {
+                "id": 1,
+                "content": "Please check if the following smart contract has a Price Manipulation by AMM vulnerability. Answer only 'yes' or 'no'."
+            },
+            {
+                "id": 2,
+                "content": "Kindly examine the smart contract below for a Price Manipulation by AMM vulnerability. Respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 3,
+                "content": "Can you verify if the given smart contract contains a Price Manipulation by AMM vulnerability? Just say 'yes' or 'no'."
+            },
+            {
+                "id": 4,
+                "content": "Plz check if the folowing smart contract has a Price Manipulation by AMM vulnerability. Answer only 'yes' or 'no'."
+            },
+            {
+                "id": 5,
+                "content": "Analyze the smart contract provided for the presence of a Price Manipulation by AMM vulnerability. Your response should be limited to 'yes' or 'no'."
+            },
+            {
+                "id": 6,
+                "content": "Does the smart contract below have a Price Manipulation by AMM vulnerability? Answer with a simple 'yes' or 'no'."
+            },
+            {
+                "id": 7,
+                "content": "Evaluate the following smart contract for a Price Manipulation by AMM vulnerability. Provide only a 'yes' or 'no' answer."
+            },
+            {
+                "id": 8,
+                "content": "Check if the smart contract has a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no' only."
+            },
+            {
+                "id": 9,
+                "content": "Examine the smart contract for a Price Manipulation by AMM vulnerability. Your answer should be either 'yes' or 'no'."
+            },
+            {
+                "id": 10,
+                "content": "Is there a Price Manipulation by AMM vulnerability in the following smart contract? Answer 'yes' or 'no'."
+            },
+            {
+                "id": 11,
+                "content": "Plz check if the smart contract has a Price Manipulation by AMM vulnerability. Only answer 'yes' or 'no'."
+            },
+            {
+                "id": 12,
+                "content": "Determine whether the given smart contract contains a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no' exclusively."
+            },
+            {
+                "id": 13,
+                "content": "Assess the smart contract for the presence of a Price Manipulation by AMM vulnerability. Your response should be limited to 'yes' or 'no'."
+            },
+            {
+                "id": 14,
+                "content": "Does the smart contract exhibit a Price Manipulation by AMM vulnerability? Please answer with only 'yes' or 'no'."
+            },
+            {
+                "id": 15,
+                "content": "Kindly review the smart contract for a Price Manipulation by AMM vulnerability. Provide a 'yes' or 'no' response only."
+            },
+            {
+                "id": 16,
+                "content": "Analyze the provided smart contract to determine if it has a Price Manipulation by AMM vulnerability. Answer with 'yes' or 'no'."
+            },
+            {
+                "id": 17,
+                "content": "Check if the smart contract below contains a Price Manipulation by AMM vulnerability. Respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 18,
+                "content": "Examine the smart contract for a Price Manipulation by AMM vulnerability. Your answer should be 'yes' or 'no' only."
+            },
+            {
+                "id": 19,
+                "content": "Does the following smart contract have a Price Manipulation by AMM vulnerability? Answer only with 'yes' or 'no'."
+            },
+            {
+                "id": 20,
+                "content": "Plz check if the smart contract has a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no' only."
+            }
+        ],
+        "fewShot": [
+            {
+                "id": 1,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nPlease answer: Does the following smart contract have a Price Manipulation by AMM vulnerability? Please answer only 'yes' or 'no'."
+            },
+            {
+                "id": 2,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nKindly determine: Does the given smart contract contain a Price Manipulation by AMM vulnerability? Respond with 'yes' or 'no' only."
+            },
+            {
+                "id": 3,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nBased on these examples, does the following smart contract have a Price Manipulation by AMM vulnerability? Answer 'yes' or 'no'."
+            },
+            {
+                "id": 4,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nPlz answer: Does the folowing smart contract have a Price Manipulation by AMM vulnerability? Answer only 'yes' or 'no'."
+            },
+            {
+                "id": 5,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nAnalyze the provided smart contract and determine if it has a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no'."
+            },
+            {
+                "id": 6,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nDoes the smart contract below exhibit a Price Manipulation by AMM vulnerability? Answer with a simple 'yes' or 'no'."
+            },
+            {
+                "id": 7,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nEvaluate the following smart contract for a Price Manipulation by AMM vulnerability. Provide only a 'yes' or 'no' answer."
+            },
+            {
+                "id": 8,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nCheck if the smart contract has a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no' only."
+            },
+            {
+                "id": 9,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nExamine the smart contract for a Price Manipulation by AMM vulnerability. Your answer should be either 'yes' or 'no'."
+            },
+            {
+                "id": 10,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nIs there a Price Manipulation by AMM vulnerability in the following smart contract? Answer 'yes' or 'no'."
+            },
+            {
+                "id": 11,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nPlz check if the smart contract has a Price Manipulation by AMM vulnerability. Only answer 'yes' or 'no'."
+            },
+            {
+                "id": 12,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nDetermine whether the given smart contract contains a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no' exclusively."
+            },
+            {
+                "id": 13,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nAssess the smart contract for the presence of a Price Manipulation by AMM vulnerability. Your response should be limited to 'yes' or 'no'."
+            },
+            {
+                "id": 14,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nDoes the smart contract exhibit a Price Manipulation by AMM vulnerability? Please answer with only 'yes' or 'no'."
+            },
+            {
+                "id": 15,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nKindly review the smart contract for a Price Manipulation by AMM vulnerability. Provide a 'yes' or 'no' response only."
+            },
+            {
+                "id": 16,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nAnalyze the provided smart contract to determine if it has a Price Manipulation by AMM vulnerability. Answer with 'yes' or 'no'."
+            },
+            {
+                "id": 17,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nCheck if the smart contract below contains a Price Manipulation by AMM vulnerability. Respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 18,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nExamine the smart contract for a Price Manipulation by AMM vulnerability. Your answer should be 'yes' or 'no' only."
+            },
+            {
+                "id": 19,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nDoes the following smart contract have a Price Manipulation by AMM vulnerability? Answer only with 'yes' or 'no'."
+            },
+            {
+                "id": 20,
+                "content": "Example 1: \ncontract VulnerableAMM {\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        uint256 amountOut = (amountIn * reserveOut) / (reserveIn + amountIn);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract A have a Price Manipulation by AMM vulnerability?\nAnswer: yes\nEnd of Example 1.\nExample 2: \ncontract SecureAMM {\n    uint256 private constant MINIMUM_LIQUIDITY = 1000;\n    function swap(uint256 amountIn, uint256 minAmountOut) external {\n        uint256 reserveIn = getReserveIn();\n        uint256 reserveOut = getReserveOut();\n        require(reserveIn > MINIMUM_LIQUIDITY && reserveOut > MINIMUM_LIQUIDITY, \"Insufficient liquidity\");\n        uint256 amountInWithFee = amountIn * 997;\n        uint256 amountOut = (amountInWithFee * reserveOut) / (reserveIn * 1000 + amountInWithFee);\n        require(amountOut >= minAmountOut, \"Insufficient output amount\");\n        // Perform swap\n    }\n}\nQuestion: Does contract B have a Price Manipulation by AMM vulnerability?\nAnswer: no\nEnd of Example 2.\nPlz check if the smart contract has a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no' only."
+            }
+        ],
+        "taskOriented": [
+            {
+                "id": 1,
+                "content": "Task: Audit smart contract for Price Manipulation by AMM vulnerability\nInstructions:\n1. Check the AMM swap function implementation\n2. Verify if there are safeguards against price manipulation\n3. If proper safeguards exist, the vulnerability doesn't exist. Otherwise, it does.\n4. Answer only with 'yes' or 'no' to indicate if this vulnerability exists."
+            },
+            {
+                "id": 2,
+                "content": "Task: Evaluate smart contract for Price Manipulation by AMM vulnerability\nSteps:\n1. Examine the AMM swap mechanism in the contract\n2. Confirm whether there are measures to prevent price manipulation\n3. Determine vulnerability presence based on existing safeguards\n4. Provide a 'yes' or 'no' response to indicate vulnerability existence."
+            },
+            {
+                "id": 3,
+                "content": "Task: Analyze smart contract for Price Manipulation by AMM vulnerability\nGuidelines:\n1. Review the AMM price calculation method within the contract\n2. Assess if there are protections against price manipulation attacks\n3. Conclude vulnerability status based on the presence of protective measures\n4. Respond with 'yes' or 'no' to signify presence of vulnerability."
+            },
+            {
+                "id": 4,
+                "content": "Task: Inspect smart contract for Price Manipulation by AMM vulnerability\nProcedure:\n1. Scrutinize the AMM swap operations in the contract\n2. Check if there are mechanisms to prevent price manipulation\n3. Deduce vulnerability existence based on the implemented safety features\n4. Answer with 'yes' or 'no' to indicate if vulnerability is present."
+            },
+            {
+                "id": 5,
+                "content": "Task: Examine smart contract for Price Manipulation by AMM vulnerability\nDirections:\n1. Investigate the AMM pricing logic within the contract\n2. Verify whether there are safeguards against price manipulation attacks\n3. Determine vulnerability status based on the presence of protective measures\n4. Provide a 'yes' or 'no' response to indicate vulnerability presence."
+            },
+            {
+                "id": 6,
+                "content": "Task: Assess smart contract for Price Manipulation by AMM vulnerability\nSteps:\n1. Analyze the AMM swap function implementation in the contract\n2. Confirm if there are adequate protections against price manipulation\n3. Conclude vulnerability existence based on the implemented safety features\n4. Respond with 'yes' or 'no' to signify presence of vulnerability."
+            },
+            {
+                "id": 7,
+                "content": "Task: Review smart contract for Price Manipulation by AMM vulnerability\nInstructions:\n1. Examine the AMM price calculation method within the contract\n2. Check if there are measures to prevent price manipulation attacks\n3. Determine vulnerability status based on the existence of protective mechanisms\n4. Answer only with 'yes' or 'no' to indicate if vulnerability exists."
+            },
+            {
+                "id": 8,
+                "content": "Task: Evaluate smart contract for Price Manipulation by AMM vulnerability\nGuidelines:\n1. Scrutinize the AMM swap logic in the contract\n2. Verify whether there are safeguards against price manipulation\n3. Deduce vulnerability presence based on the implemented protection measures\n4. Provide a 'yes' or 'no' response to indicate vulnerability existence."
+            },
+            {
+                "id": 9,
+                "content": "Task: Analyze smart contract for Price Manipulation by AMM vulnerability\nProcedure:\n1. Review the AMM pricing mechanism within the contract\n2. Assess if there are adequate protections against price manipulation attacks\n3. Conclude vulnerability status based on the presence of safety features\n4. Respond with 'yes' or 'no' to signify presence of vulnerability."
+            },
+            {
+                "id": 10,
+                "content": "Task: Inspect smart contract for Price Manipulation by AMM vulnerability\nDirections:\n1. Investigate the AMM swap operations in the contract\n2. Check if there are mechanisms to prevent price manipulation\n3. Determine vulnerability existence based on the implemented protective measures\n4. Answer with 'yes' or 'no' to indicate if vulnerability is present."
+            },
+            {
+                "id": 11,
+                "content": "Task: Examine smart contract for Price Manipulation by AMM vulnerability\nSteps:\n1. Analyze the AMM price calculation logic within the contract\n2. Confirm whether there are safeguards against price manipulation attacks\n3. Deduce vulnerability status based on the existence of protective features\n4. Provide a 'yes' or 'no' response to indicate vulnerability presence."
+            },
+            {
+                "id": 12,
+                "content": "Task: Assess smart contract for Price Manipulation by AMM vulnerability\nInstructions:\n1. Scrutinize the AMM swap function implementation in the contract\n2. Verify if there are adequate protections against price manipulation\n3. Conclude vulnerability existence based on the implemented safety measures\n4. Respond with 'yes' or 'no' to signify presence of vulnerability."
+            },
+            {
+                "id": 13,
+                "content": "Task: Review smart contract for Price Manipulation by AMM vulnerability\nGuidelines:\n1. Examine the AMM pricing mechanism within the contract\n2. Check whether there are measures to prevent price manipulation attacks\n3. Determine vulnerability status based on the presence of protective features\n4. Answer only with 'yes' or 'no' to indicate if vulnerability exists."
+            },
+            {
+                "id": 14,
+                "content": "Task: Evaluate smart contract for Price Manipulation by AMM vulnerability\nProcedure:\n1. Investigate the AMM swap logic in the contract\n2. Assess if there are safeguards against price manipulation\n3. Deduce vulnerability presencebased on the implemented protection measures\n4. Provide a 'yes' or 'no' response to indicate vulnerability existence."
+            },
+            {
+                "id": 15,
+                "content": "Task: Analyze smart contract for Price Manipulation by AMM vulnerability\nDirections:\n1. Review the AMM price calculation method within the contract\n2. Confirm whether there are adequate protections against price manipulation attacks\n3. Conclude vulnerability status based on the presence of safety features\n4. Respond with 'yes' or 'no' to signify presence of vulnerability."
+            },
+            {
+                "id": 16,
+                "content": "Task: Inspect smart contract for Price Manipulation by AMM vulnerability\nSteps:\n1. Scrutinize the AMM swap operations in the contract\n2. Verify if there are mechanisms to prevent price manipulation\n3. Determine vulnerability existence based on the implemented protective measures\n4. Answer with 'yes' or 'no' to indicate if vulnerability is present."
+            },
+            {
+                "id": 17,
+                "content": "Task: Examine smart contract for Price Manipulation by AMM vulnerability\nInstructions:\n1. Analyze the AMM pricing logic within the contract\n2. Check if there are safeguards against price manipulation attacks\n3. Deduce vulnerability status based on the existence of protective features\n4. Provide a 'yes' or 'no' response to indicate vulnerability presence."
+            },
+            {
+                "id": 18,
+                "content": "Task: Assess smart contract for Price Manipulation by AMM vulnerability\nGuidelines:\n1. Investigate the AMM swap function implementation in the contract\n2. Confirm whether there are adequate protections against price manipulation\n3. Conclude vulnerability existence based on the implemented safety measures\n4. Respond with 'yes' or 'no' to signify presence of vulnerability."
+            },
+            {
+                "id": 19,
+                "content": "Task: Review smart contract for Price Manipulation by AMM vulnerability\nProcedure:\n1. Examine the AMM price calculation mechanism within the contract\n2. Verify if there are measures to prevent price manipulation attacks\n3. Determine vulnerability status based on the presence of protective features\n4. Answer only with 'yes' or 'no' to indicate if vulnerability exists."
+            },
+            {
+                "id": 20,
+                "content": "Task: Evaluate smart contract for Price Manipulation by AMM vulnerability\nDirections:\n1. Scrutinize the AMM swap logic in the contract\n2. Assess whether there are safeguards against price manipulation\n3. Deduce vulnerability presence based on the implemented protection measures\n4. Provide a 'yes' or 'no' response to indicate vulnerability existence."
+            }
+        ],
+        "roleOriented": [
+            {
+                "id": 1,
+                "content": "As an experienced smart contract security auditor, please review the following contract for a Price Manipulation by AMM vulnerability. Answer only with 'yes' or 'no'."
+            },
+            {
+                "id": 2,
+                "content": "In your role as a blockchain security expert, examine the provided smart contract for a Price Manipulation by AMM vulnerability. Respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 3,
+                "content": "Acting as a senior smart contract developer, analyze the given contract for the presence of a Price Manipulation by AMM vulnerability. Answer only 'yes' or 'no'."
+            },
+            {
+                "id": 4,
+                "content": "As a seasoned cryptocurrency security consultant, please assess the following smart contract for a Price Manipulation by AMM vulnerability. Provide a 'yes' or 'no' response."
+            },
+            {
+                "id": 5,
+                "content": "Taking on the role of a blockchain security auditor, review the provided smart contract for a Price Manipulation by AMM vulnerability. Answer with 'yes' or 'no' only."
+            },
+            {
+                "id": 6,
+                "content": "As an expert in smart contract vulnerabilities, examine the given contract for a Price Manipulation by AMM issue. Respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 7,
+                "content": "In your capacity as a DeFi security specialist, analyze the following smart contract for a Price Manipulation by AMM vulnerability. Answer only with 'yes' or 'no'."
+            },
+            {
+                "id": 8,
+                "content": "As a professional smart contract auditor, please review the provided contract for a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no'."
+            },
+            {
+                "id": 9,
+                "content": "Taking the perspective of a blockchain security researcher, examine the given smart contract for a Price Manipulation by AMM vulnerability. Answer only 'yes' or 'no'."
+            },
+            {
+                "id": 10,
+                "content": "As an experienced Solidity developer, please assess the following contract for a Price Manipulation by AMM vulnerability. Provide a 'yes' or 'no' response."
+            },
+            {
+                "id": 11,
+                "content": "In your role as a cryptocurrency security analyst, review the provided smart contract for a Price Manipulation by AMM vulnerability. Answer with 'yes' or 'no' only."
+            },
+            {
+                "id": 12,
+                "content": "Acting as a blockchain security consultant, examine the given contract for the presence of a Price Manipulation by AMM vulnerability. Respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 13,
+                "content": "As a smart contract security expert, analyze the following contract for a Price Manipulation by AMM vulnerability. Answer only with 'yes' or 'no'."
+            },
+            {
+                "id": 14,
+                "content": "Taking on the role of a DeFi protocol auditor, please review the provided smart contract for a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no'."
+            },
+            {
+                "id": 15,
+                "content": "As a blockchain security engineer, examine the given smart contract for a Price Manipulation by AMM vulnerability. Answer only 'yes' or 'no'."
+            },
+            {
+                "id": 16,
+                "content": "In your capacity as a smart contract vulnerability researcher, analyze the following contract for a Price Manipulation by AMM issue. Provide a 'yes' or 'no' response."
+            },
+            {
+                "id": 17,
+                "content": "As a professional in cryptocurrency security, please assess the provided smart contract for a Price Manipulation by AMM vulnerability. Answer with 'yes' or 'no' only."
+            },
+            {
+                "id": 18,
+                "content": "Taking the perspective of a Solidity security specialist, review the given contract for a Price Manipulation by AMM vulnerability. Respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 19,
+                "content": "As an expert in blockchain security audits, examine the following smart contract for a Price Manipulation by AMM vulnerability. Answer only with 'yes' or 'no'."
+            },
+            {
+                "id": 20,
+                "content": "In your role as a DeFi security auditor, analyze the provided contract for the presence of a Price Manipulation by AMM vulnerability. Respond with 'yes' or 'no'."
+            }
+        ],
+        "formal": [
+            {
+                "id": 1,
+                "content": "Please conduct a Price Manipulation by AMM vulnerability analysis on the smart contract in the attachment. Respond only with 'yes' or 'no' to indicate the presence of this vulnerability."
+            },
+            {
+                "id": 2,
+                "content": "Kindly perform an assessment of the attached smart contract to determine the existence of a Price Manipulation by AMM vulnerability. Provide a response of either 'yes' or 'no'."
+            },
+            {
+                "id": 3,
+                "content": "We request that you evaluate the enclosed smart contract for the presence of a Price Manipulation by AMM vulnerability. Please respond with 'yes' or 'no' to indicate your findings."
+            },
+            {
+                "id": 4,
+                "content": "Your expertise is required to analyze the provided smart contract for a Price Manipulation by AMM vulnerability. Kindly respond with 'yes' or 'no' to signify the presence or absence of this vulnerability."
+            },
+            {
+                "id": 5,
+                "content": "We kindly ask you to examine the attached smart contract and determine if a Price Manipulation by AMM vulnerability exists. Please provide your conclusion as either 'yes' or 'no'."
+            },
+            {
+                "id": 6,
+                "content": "Please undertake an analysis of the enclosed smart contract to identify any Price Manipulation by AMM vulnerabilities. Respond solely with 'yes' or 'no' to indicate your findings."
+            },
+            {
+                "id": 7,
+                "content": "We request your assistance in evaluating the provided smart contract for the presence of a Price Manipulation by AMM vulnerability. Kindly respond with either 'yes' or 'no'."
+            },
+            {
+                "id": 8,
+                "content": "Your assessment is required to determine if the attached smart contract contains a Price Manipulation by AMM vulnerability. Please provide a 'yes' or 'no' response to indicate your conclusion."
+            },
+            {
+                "id": 9,
+                "content": "We kindly ask you to conduct an examination of the enclosed smart contract for any Price Manipulation by AMM vulnerabilities. Respond only with 'yes' or 'no' to signify your findings."
+            },
+            {
+                "id": 10,
+                "content": "Please perform an analysis of the provided smart contract to identify the presence of a Price Manipulation by AMM vulnerability. Kindly respond with 'yes' or 'no' to indicate your determination."
+            },
+            {
+                "id": 11,
+                "content": "Your expertise is sought to evaluate the attached smart contract for a Price Manipulation by AMM vulnerability. Please provide your conclusion as either 'yes' or 'no'."
+            },
+            {
+                "id": 12,
+                "content": "We request that you assess the enclosed smart contract to determine if a Price Manipulation by AMM vulnerability exists. Kindly respond with 'yes' or 'no' to signify your findings."
+            },
+            {
+                "id": 13,
+                "content": "Please undertake an examination of the provided smart contract for the presence of a Price Manipulation by AMM vulnerability. Respond solely with 'yes' or 'no' to indicate your conclusion."
+            },
+            {
+                "id": 14,
+                "content": "Your analysis is required to evaluate the attached smart contract and identify any Price Manipulation by AMM vulnerabilities. Kindly provide a 'yes' or 'no' response to indicate your determination."
+            },
+            {
+                "id": 15,
+                "content": "We kindly request your assistance in examining the enclosed smart contract for a Price Manipulation by AMM vulnerability. Please respond with either 'yes' or 'no' to signify your findings."
+            },
+            {
+                "id": 16,
+                "content": "Please conduct an assessment of the provided smart contract to determine the existence of a Price Manipulation by AMM vulnerability. Respond only with 'yes' or 'no' to indicate your conclusion."
+            },
+            {
+                "id": 17,
+                "content": "Your expertise is required to analyze the attached smart contract for the presence of a Price Manipulation by AMM vulnerability. Kindly provide a 'yes' or 'no' response to signify your findings."
+            },
+            {
+                "id": 18,
+                "content": "We request that you evaluate the enclosed smart contract to identify any Price Manipulation by AMM vulnerabilities. Please respond with 'yes' or 'no' to indicate your determination."
+            },
+            {
+                "id": 19,
+                "content": "Please undertake an examination of the provided smart contract for a Price Manipulation by AMM vulnerability. Kindly respond with either 'yes' or 'no' to signify your conclusion."
+            },
+            {
+                "id": 20,
+                "content": "Your assessment is sought to determine if the attached smart contract contains a Price Manipulation by AMM vulnerability. Please provide a 'yes' or 'no' response to indicate your findings."
+            }
+        ],
+        "informal": [
+            {
+                "id": 1,
+                "content": "Hey, can you check if this smart contract has a Price Manipulation by AMM bug? Just reply with 'yes' or 'no', thanks!"
+            },
+            {
+                "id": 2,
+                "content": "Yo! Mind taking a look at this smart contract for a Price Manipulation by AMM issue? Hit me back with a 'yes' or 'no'!"
+            },
+            {
+                "id": 3,
+                "content": "Hey there! Could you give this smart contract a once-over for a Price Manipulation by AMM problem? Just need a 'yes' or 'no' answer!"
+            },
+            {
+                "id": 4,
+                "content": "Hi! Can you spot any Price Manipulation by AMM bugs in this smart contract? Just a quick 'yes' or 'no' will do!"
+            },
+            {
+                "id": 5,
+                "content": "Hey buddy, mind checking this smart contract for a Price Manipulation by AMM vulnerability? Just say 'yes' or 'no'!"
+            },
+            {
+                "id": 6,
+                "content": "Sup! Can you take a peek at this smart contract and see if it's got a Price Manipulation by AMM issue? 'Yes' or 'no' is all I need!"
+            },
+            {
+                "id": 7,
+                "content": "Heya! Would you mind giving this smart contract a quick look for a Price Manipulation by AMM bug? Just need a 'yes' or 'no'!"
+            },
+            {
+                "id": 8,
+                "content": "Hi there! Can you check out this smart contract for a Price Manipulation by AMM problem? Just hit me with a 'yes' or 'no'!"
+            },
+            {
+                "id": 9,
+                "content": "Hey! Got a sec to look at this smart contract for a Price Manipulation by AMM vulnerability? Just need a 'yes' or 'no' answer!"
+            },
+            {
+                "id": 10,
+                "content": "Yo, what's up! Mind giving this smart contract a quick scan for a Price Manipulation by AMM issue? Just a 'yes' or 'no' will do!"
+            },
+            {
+                "id": 11,
+                "content": "Hey there! Can you take a quick look at this smart contract for a Price Manipulation by AMM bug? Just need a 'yes' or 'no'!"
+            },
+            {
+                "id": 12,
+                "content": "Hi! Would you mind checking if this smart contract has a Price Manipulation by AMM vulnerability? Just say 'yes' or 'no'!"
+            },
+            {
+                "id": 13,
+                "content": "Heya! Can you give this smart contract a once-over for a Price Manipulation by AMM issue? Just need a 'yes' or 'no' answer!"
+            },
+            {
+                "id": 14,
+                "content": "Sup! Mind taking a look at this smart contract for a Price Manipulation by AMM problem? Hit me back with a 'yes' or 'no'!"
+            },
+            {
+                "id": 15,
+                "content": "Hey buddy! Could you check out this smart contract for a Price Manipulation by AMM vulnerability? Just a quick 'yes' or 'no' will do!"
+            },
+            {
+                "id": 16,
+                "content": "Hi there! Got a moment to scan this smart contract for a Price Manipulation by AMM bug? Just need a 'yes' or 'no'!"
+            },
+            {
+                "id": 17,
+                "content": "Hey! Can you take a peek at this smart contract and see if it's got a Price Manipulation by AMM issue? 'Yes' or 'no' is all I need!"
+            },
+            {
+                "id": 18,
+                "content": "Yo! Mind giving this smart contract a quick look for a Price Manipulation by AMM vulnerability? Just say 'yes' or 'no'!"
+            },
+            {
+                "id": 19,
+                "content": "Heya! Would you mind checking if this smart contract has a Price Manipulation by AMM bug? Just need a 'yes' or 'no' answer!"
+            },
+            {
+                "id": 20,
+                "content": "Hi! Can you spot any Price Manipulation by AMM issues in this smart contract? Just a quick 'yes' or 'no' will do!"
+            }
+        ]
+    }
+}

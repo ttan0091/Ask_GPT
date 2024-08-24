@@ -1,1 +1,0 @@
-function allowance(address _owner, address _spender) public constant returns (uint256 remaining) { _owner; _spender; remaining; }

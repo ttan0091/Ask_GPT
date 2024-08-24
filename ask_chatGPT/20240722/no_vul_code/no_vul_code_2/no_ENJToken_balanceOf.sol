@@ -1,1 +1,0 @@
-function balanceOf(address _owner) public constant returns (uint256 balance) { _owner; balance; }

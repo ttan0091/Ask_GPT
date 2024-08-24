@@ -1,1 +1,0 @@
-function proposalMaxOperations() public pure returns (uint) { return 10; }
